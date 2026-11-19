@@ -1,0 +1,112 @@
+/* ModoDaltonico - Estilos principales */
+/* Safe area para no tapar contenido al mostrar el control flotante */
+body.mdal-safe-area {
+  padding-bottom: 80px;
+  padding-right: 20px;
+}
+
+/* Estado activo con clases por tipo */
+body.mdal-on {
+  /* base adjustments for readability */
+  text-rendering: optimizeLegibility;
+}
+
+body.mdal-on.mdal-protanopia {
+  filter: saturate(0.85) contrast(1.1) hue-rotate(-15deg);
+}
+
+body.mdal-on.mdal-deuteranopia {
+  filter: saturate(0.85) contrast(1.12) hue-rotate(-25deg);
+}
+
+body.mdal-on.mdal-tritanopia {
+  filter: saturate(0.85) contrast(1.12) hue-rotate(45deg);
+}
+
+/* Evitar que el control flotante herede filtros */
+#mdal-ui,
+#mdal-ui * {
+  filter: none !important;
+}
+
+/* Contenedor del control flotante */
+#mdal-ui {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  font-family: inherit;
+}
+
+/* Botón flotante accesible */
+#mdal-toggle {
+  min-width: 44px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 24px;
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  cursor: pointer;
+  font-weight: 600;
+}
+#mdal-toggle:hover,
+#mdal-toggle:focus {
+  background: #1558b0;
+  outline: 3px solid #cfe0ff;
+  outline-offset: 2px;
+}
+
+/* Indicador */
+#mdal-indicator {
+  background: rgba(32, 33, 36, 0.9);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  line-height: 1.3;
+  max-width: 300px;
+}
+
+/* Panel de selección de modo */
+#mdal-panel {
+  background: #ffffff;
+  color: #222;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 10px 12px;
+  width: 240px;
+  display: none;
+}
+#mdal-panel.mdal-panel--open {
+  display: block;
+}
+#mdal-panel .mdal-panel-title {
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#mdal-panel .mdal-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+}
+#mdal-panel .mdal-option input[type="radio"] {
+  width: 16px;
+  height: 16px;
+}
+#mdal-panel .mdal-option label {
+  cursor: pointer;
+}
+
+/* Accesibilidad de foco */
+#mdal-ui a:focus, #mdal-ui button:focus, #mdal-ui input:focus {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
+}

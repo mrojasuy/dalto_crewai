@@ -1,0 +1,19 @@
+<?php
+$s_plugin_ModoDaltonico_plugin_title = 'Modo Daltónico';
+$s_plugin_ModoDaltonico_plugin_description = 'Accesibilidad: filtros visuales para daltonismo con selección por usuario y persistencia local.';
+$s_plugin_ModoDaltonico_menu_title = 'Modo Daltónico';
+$s_plugin_ModoDaltonico_config_title = 'Modo Daltónico - Configuración';
+$s_plugin_ModoDaltonico_config_enabled_label = 'Activar plugin globalmente';
+$s_plugin_ModoDaltonico_config_enabled_help = 'Al activar, se mostrará un botón flotante para encender el modo daltónico y elegir el filtro. El estado se guarda en el navegador (localStorage).';
+$s_plugin_ModoDaltonico_save_button = 'Guardar';
+$s_plugin_ModoDaltonico_ui_toggle_on = 'Encender';
+$s_plugin_ModoDaltonico_ui_toggle_off = 'Apagar';
+$s_plugin_ModoDaltonico_ui_mode_label = 'Selecciona el modo';
+$s_plugin_ModoDaltonico_ui_mode_protanopia = 'Protanopia';
+$s_plugin_ModoDaltonico_ui_mode_deuteranopia = 'Deuteranopia';
+$s_plugin_ModoDaltonico_ui_mode_tritanopia = 'Tritanopia';
+$s_plugin_ModoDaltonico_ui_indicator_active = 'Modo Daltónico';
+$s_plugin_ModoDaltonico_ui_indicator_off = 'Apagado';
+$s_plugin_ModoDaltonico_ui_help_brief = 'Usa el botón flotante de accesibilidad para encender el Modo Daltónico y elegir un filtro que mejore tu percepción de color. La configuración se recuerda en este navegador.';
+$s_plugin_ModoDaltonico_messages_saved_success = 'Configuración guardada correctamente.';
+$s_plugin_ModoDaltonico_messages_csrf_error = 'Falló la validación del token de seguridad. Inténtalo de nuevo.';

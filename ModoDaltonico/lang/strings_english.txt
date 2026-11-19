@@ -1,0 +1,19 @@
+<?php
+$s_plugin_ModoDaltonico_plugin_title = 'Color Blind Mode';
+$s_plugin_ModoDaltonico_plugin_description = 'Accessibility: color-blind-friendly visual filters with per-user selection and local persistence.';
+$s_plugin_ModoDaltonico_menu_title = 'Color Blind Mode';
+$s_plugin_ModoDaltonico_config_title = 'Color Blind Mode - Settings';
+$s_plugin_ModoDaltonico_config_enabled_label = 'Enable plugin globally';
+$s_plugin_ModoDaltonico_config_enabled_help = 'When enabled, a floating button allows users to toggle Color Blind Mode and select their preferred filter. State is stored in the browser (localStorage).';
+$s_plugin_ModoDaltonico_save_button = 'Save';
+$s_plugin_ModoDaltonico_ui_toggle_on = 'Enable';
+$s_plugin_ModoDaltonico_ui_toggle_off = 'Disable';
+$s_plugin_ModoDaltonico_ui_mode_label = 'Select mode';
+$s_plugin_ModoDaltonico_ui_mode_protanopia = 'Protanopia';
+$s_plugin_ModoDaltonico_ui_mode_deuteranopia = 'Deuteranopia';
+$s_plugin_ModoDaltonico_ui_mode_tritanopia = 'Tritanopia';
+$s_plugin_ModoDaltonico_ui_indicator_active = 'Color Blind Mode';
+$s_plugin_ModoDaltonico_ui_indicator_off = 'Off';
+$s_plugin_ModoDaltonico_ui_help_brief = 'Use the floating accessibility button to enable Color Blind Mode and choose a filter that improves your color perception. Settings are remembered in this browser.';
+$s_plugin_ModoDaltonico_messages_saved_success = 'Configuration saved successfully.';
+$s_plugin_ModoDaltonico_messages_csrf_error = 'Security token validation failed. Please try again.';
